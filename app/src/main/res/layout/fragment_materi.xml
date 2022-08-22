@@ -86,7 +86,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginHorizontal="16dp"
             android:fontFamily="@font/poppins_regular"
-            android:text="Materi pembelajaran satu"
+            android:text="Bab 1 : Wirausahawan &amp; Kewirausahaan"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/extend1"
             app:layout_constraintTop_toBottomOf="@id/tv_belajar"/>
@@ -119,13 +119,13 @@
             android:id="@+id/tv_materi_dua"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
             android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="12dp"
             android:fontFamily="@font/poppins_regular"
-            android:text="Materi pembelajaran dua"
-            app:layout_constraintStart_toStartOf="parent"
+            android:text="Bab 2 : Peluang Usaha"
             app:layout_constraintEnd_toStartOf="@id/extend2"
-            app:layout_constraintTop_toBottomOf="@id/line1"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line1" />
 
         <ImageView
             android:id="@+id/extend2"
@@ -158,7 +158,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginHorizontal="16dp"
             android:fontFamily="@font/poppins_regular"
-            android:text="Materi pembelajaran tiga"
+            android:text="Bab 3 : Hak Atas Kekayaan Intelektual"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/extend3"
             app:layout_constraintTop_toBottomOf="@id/line2"/>

@@ -1,5 +1,7 @@
 package com.rizdev.pkkwu
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -29,6 +31,13 @@ class EvaluasiFragment : Fragment() {
 
         binding.btnBack.setOnClickListener {
             findNavController().popBackStack()
+        }
+
+        binding.btnKuis.setOnClickListener {
+            val uri: Uri =
+                Uri.parse("https://bit.ly/KUIS_PKKWU") // missing 'http://' will cause crashed
+            val intent = Intent(Intent.ACTION_VIEW, uri)
+            startActivity(intent)
         }
     }
 

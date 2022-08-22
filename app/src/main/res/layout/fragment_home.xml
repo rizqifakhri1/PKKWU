@@ -294,7 +294,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginHorizontal="16dp"
             android:fontFamily="@font/poppins_regular"
-            android:text="Materi pembelajaran satu"
+            android:text="Bab 1 : Wirausahawan &amp; Kewirausahaan"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/extend1"
             app:layout_constraintTop_toBottomOf="@id/tv_belajar"/>
@@ -330,7 +330,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginHorizontal="16dp"
             android:fontFamily="@font/poppins_regular"
-            android:text="Materi pembelajaran dua"
+            android:text="Bab 2 : Peluang Usaha"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/extend2"
             app:layout_constraintTop_toBottomOf="@id/line1"/>
@@ -366,7 +366,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginHorizontal="16dp"
             android:fontFamily="@font/poppins_regular"
-            android:text="Materi pembelajaran tiga"
+            android:text="Bab 3 : Hak Atas Kekayaan Intelektual"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/extend3"
             app:layout_constraintTop_toBottomOf="@id/line2"/>
@@ -398,7 +398,7 @@
             android:id="@+id/bg_kuis"
             android:layout_width="match_parent"
             android:layout_height="240dp"
-            android:src="@drawable/bg_kuis"
+            android:src="@drawable/bg_kuis_home"
             android:layout_marginTop="32dp"
             android:scaleType="centerCrop"
             app:layout_constraintStart_toStartOf="parent"
@@ -410,7 +410,7 @@
             android:layout_width="317dp"
             android:layout_height="237dp"
             android:layout_marginEnd="-40dp"
-            android:src="@drawable/char_kuis"
+            android:src="@drawable/char_boy"
             app:layout_constraintBottom_toBottomOf="@id/bg_kuis"
             app:layout_constraintEnd_toEndOf="parent" />
 
