@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/startFragment">
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.rizdev.pkkwu.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.rizdev.pkkwu.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_materiFragment"
+            app:destination="@id/materiFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_kreditFragment"
+            app:destination="@id/kreditFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_petunjukFragment"
+            app:destination="@id/petunjukFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_kompetensiFragment"
+            app:destination="@id/kompetensiFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_evaluasiFragment"
+            app:destination="@id/evaluasiFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_fiturFragment"
+            app:destination="@id/fiturFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_fiturFragment2"
+            app:destination="@id/fiturFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/materiFragment"
+        android:name="com.rizdev.pkkwu.MateriFragment"
+        android:label="fragment_materi"
+        tools:layout="@layout/fragment_materi" >
+        <action
+            android:id="@+id/action_materiFragment_to_kompetensiFragment"
+            app:destination="@id/kompetensiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kreditFragment"
+        android:name="com.rizdev.pkkwu.KreditFragment"
+        android:label="fragment_kredit"
+        tools:layout="@layout/fragment_kredit" />
+    <fragment
+        android:id="@+id/petunjukFragment"
+        android:name="com.rizdev.pkkwu.PetunjukFragment"
+        android:label="fragment_petunjuk"
+        tools:layout="@layout/fragment_petunjuk" />
+    <fragment
+        android:id="@+id/kompetensiFragment"
+        android:name="com.rizdev.pkkwu.KompetensiFragment"
+        android:label="fragment_kompetensi"
+        tools:layout="@layout/fragment_kompetensi" />
+    <fragment
+        android:id="@+id/evaluasiFragment"
+        android:name="com.rizdev.pkkwu.EvaluasiFragment"
+        android:label="fragment_evaluasi"
+        tools:layout="@layout/fragment_evaluasi" />
+    <fragment
+        android:id="@+id/fiturFragment"
+        android:name="com.rizdev.pkkwu.FiturFragment"
+        android:label="fragment_fitur"
+        tools:layout="@layout/fragment_fitur" />
+</navigation>

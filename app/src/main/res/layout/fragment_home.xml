@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/kuning"
+    tools:context=".HomeFragment">
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_home"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="63dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/text3"/>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semangat"
+            android:layout_marginStart="6dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            app:layout_constraintStart_toEndOf="@id/iv_logo"
+            app:layout_constraintTop_toTopOf="@id/iv_logo"/>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-17dp"
+            android:layout_marginStart="6dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Anak Muda!!!"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            app:layout_constraintStart_toEndOf="@id/iv_logo"
+            app:layout_constraintTop_toBottomOf="@id/text1" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Selamat datang di aplikasi PKKWU"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/white"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="-10dp"
+            app:layout_constraintStart_toEndOf="@id/iv_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text2" />
+
+        <HorizontalScrollView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:scrollbars="none"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_logo">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/banner1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/banner_saturev"
+                    android:background="@drawable/bg_white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/banner2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/banner_duarev"
+                    android:background="@drawable/bg_white"
+                    app:layout_constraintStart_toEndOf="@id/banner1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/bg_home"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/homeroundbg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/banner"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/iv_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/ic_line"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/bg_home"/>
+
+        <TextView
+            android:id="@+id/tv_fitur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Fitur Aplikasi"
+            android:textColor="@color/orange"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_line"/>
+
+        <TextView
+            android:id="@+id/tv_seeall_fitur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lihat Semua"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_fitur"
+            app:layout_constraintBottom_toBottomOf="@id/tv_fitur"/>
+
+        <HorizontalScrollView
+            android:id="@+id/all_fitur_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_fitur">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_fitur1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Materi"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/white"
+                    android:paddingVertical="16dp"
+                    android:paddingHorizontal="16dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/list_menu"
+                    android:backgroundTint="@color/pink"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tv_fitur2"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_fitur2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Petunjuk"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/white"
+                    android:paddingVertical="16dp"
+                    android:paddingHorizontal="16dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/list_menu"
+                    android:backgroundTint="@color/biru"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_fitur1"
+                    app:layout_constraintEnd_toStartOf="@id/tv_fitur3"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_fitur3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kompetensi"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/white"
+                    android:paddingVertical="16dp"
+                    android:paddingHorizontal="16dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/list_menu"
+                    android:backgroundTint="@color/ungu"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_fitur2"
+                    app:layout_constraintEnd_toStartOf="@id/tv_fitur4"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_fitur4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Evaluasi"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/white"
+                    android:paddingVertical="16dp"
+                    android:paddingHorizontal="16dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/list_menu"
+                    android:backgroundTint="@color/hijau"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_fitur3"
+                    app:layout_constraintEnd_toStartOf="@id/tv_fitur5"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_fitur5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kredit"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/white"
+                    android:paddingVertical="16dp"
+                    android:paddingHorizontal="16dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/list_menu"
+                    android:backgroundTint="@color/pink_terang"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintStart_toEndOf="@id/tv_fitur4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/tv_belajar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:text="Yuk Belajar"
+            android:textColor="@color/orange"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/all_fitur_scroll"/>
+
+        <TextView
+            android:id="@+id/tv_seeall_belajar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lihat Semua"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_belajar"
+            app:layout_constraintBottom_toBottomOf="@id/tv_belajar"/>
+
+        <TextView
+            android:id="@+id/tv_materi_satu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Materi pembelajaran satu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/extend1"
+            app:layout_constraintTop_toBottomOf="@id/tv_belajar"/>
+
+        <ImageView
+            android:id="@+id/extend1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_extend"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_materi_satu"
+            app:layout_constraintBottom_toBottomOf="@id/tv_materi_satu"/>
+
+        <ImageView
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="@drawable/bg_white"
+            android:backgroundTint="@color/abu"
+            android:layout_marginTop="14dp"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_materi_satu"/>
+
+        <!--Materi dua-->
+
+        <TextView
+            android:id="@+id/tv_materi_dua"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Materi pembelajaran dua"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/extend2"
+            app:layout_constraintTop_toBottomOf="@id/line1"/>
+
+        <ImageView
+            android:id="@+id/extend2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_extend"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_materi_dua"
+            app:layout_constraintBottom_toBottomOf="@id/tv_materi_dua"/>
+
+        <ImageView
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="@drawable/bg_white"
+            android:backgroundTint="@color/abu"
+            android:layout_marginTop="14dp"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_materi_dua"/>
+
+        <!--Materi tiga-->
+
+        <TextView
+            android:id="@+id/tv_materi_tiga"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Materi pembelajaran tiga"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/extend3"
+            app:layout_constraintTop_toBottomOf="@id/line2"/>
+
+        <ImageView
+            android:id="@+id/extend3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_extend"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_materi_tiga"
+            app:layout_constraintBottom_toBottomOf="@id/tv_materi_tiga"/>
+
+        <ImageView
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="@drawable/bg_white"
+            android:backgroundTint="@color/abu"
+            android:layout_marginTop="14dp"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_materi_tiga"/>
+
+
+        <ImageView
+            android:id="@+id/bg_kuis"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:src="@drawable/bg_kuis"
+            android:layout_marginTop="32dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line3"/>
+
+        <ImageView
+            android:id="@+id/char_kuis"
+            android:layout_width="317dp"
+            android:layout_height="237dp"
+            android:layout_marginEnd="-40dp"
+            android:src="@drawable/char_kuis"
+            app:layout_constraintBottom_toBottomOf="@id/bg_kuis"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_desc_kuis"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/desc_kuis"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btn_kuis"
+            app:layout_constraintTop_toTopOf="@id/bg_kuis"/>
+
+        <TextView
+            android:id="@+id/btn_kuis"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:gravity="center"
+            android:background="@drawable/list_menu"
+            android:paddingHorizontal="32dp"
+            android:paddingVertical="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/orange"
+            android:text="Ayo Kuis"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="@id/bg_kuis"
+            app:layout_constraintStart_toStartOf="@id/tv_desc_kuis"
+            app:layout_constraintTop_toBottomOf="@id/tv_desc_kuis" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="PKKWU Version 1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bg_kuis"/>
+
+        <TextView
+            android:id="@+id/tv_text_aboutus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="60dp"
+            android:text="About Us"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_version"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+</ScrollView>
