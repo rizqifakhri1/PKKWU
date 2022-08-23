@@ -9,13 +9,14 @@
 
     <TextView
         android:id="@+id/tv_judul"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Semua Fitur"
-        android:layout_marginTop="32dp"
+        android:text="@string/semua_fitur"
+        android:gravity="center"
+        android:layout_marginTop="80dp"
         android:fontFamily="@font/poppins_bold"
         android:textColor="@color/white"
-        android:textSize="24sp"
+        android:textSize="40sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
@@ -25,18 +26,18 @@
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/ic_round_arrow_back_24"
         android:backgroundTint="@color/white"
-        app:layout_constraintBottom_toBottomOf="@id/tv_judul"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tv_judul" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/bg_round"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:src="@drawable/homeroundbg"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_judul"
@@ -52,14 +53,91 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/bg_round"/>
 
+    <TextView
+        android:id="@+id/tv_materi"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:text="Materi"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_white"
+        android:backgroundTint="@color/orange"
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_line"/>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/tv_petunjuk"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="Petunjuk"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_white"
+        android:backgroundTint="@color/orange"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        android:text="Under Development"
+        app:layout_constraintEnd_toStartOf="@id/tv_evaluasi"
+        app:layout_constraintTop_toBottomOf="@id/tv_materi"/>
+
+    <TextView
+        android:id="@+id/tv_evaluasi"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="Evaluasi"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_white"
+        android:backgroundTint="@color/orange"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toEndOf="@id/tv_petunjuk"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/bg_round"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/tv_materi"/>
+
+    <TextView
+        android:id="@+id/tv_kredit"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="Kredit"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_white"
+        android:backgroundTint="@color/orange"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_kompetensi"
+        app:layout_constraintTop_toBottomOf="@id/tv_petunjuk"/>
+
+    <TextView
+        android:id="@+id/tv_kompetensi"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="Kompetensi"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_white"
+        android:backgroundTint="@color/orange"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toEndOf="@id/tv_kredit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_petunjuk"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

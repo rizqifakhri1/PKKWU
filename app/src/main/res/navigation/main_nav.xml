@@ -73,5 +73,21 @@
         android:id="@+id/fiturFragment"
         android:name="com.rizdev.pkkwu.FiturFragment"
         android:label="fragment_fitur"
-        tools:layout="@layout/fragment_fitur" />
+        tools:layout="@layout/fragment_fitur" >
+        <action
+            android:id="@+id/action_fiturFragment_to_kreditFragment"
+            app:destination="@id/kreditFragment" />
+        <action
+            android:id="@+id/action_fiturFragment_to_materiFragment"
+            app:destination="@id/materiFragment" />
+        <action
+            android:id="@+id/action_fiturFragment_to_petunjukFragment"
+            app:destination="@id/petunjukFragment" />
+        <action
+            android:id="@+id/action_fiturFragment_to_kompetensiFragment"
+            app:destination="@id/kompetensiFragment" />
+        <action
+            android:id="@+id/action_fiturFragment_to_evaluasiFragment"
+            app:destination="@id/evaluasiFragment" />
+    </fragment>
 </navigation>

@@ -59,6 +59,7 @@ class HomeFragment : Fragment() {
         binding.btnKuis.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_evaluasiFragment)
         }
+
     }
 
 }

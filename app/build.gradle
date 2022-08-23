@@ -55,4 +55,7 @@ dependencies {
 
     //Tranparat statusbar
     implementation 'dev.chrisbanes.insetter:insetter:0.6.1'
+
+    //Pdf Viewer
+    //implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
 }
